@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Авторизація</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header id="page-header">
+		<h1>Авторизація</h1>
+		<nav>
+			<a href="index.html">Головна</a> |
+			<a href="registration.html">Реєстрація</a>
+		</nav>
+	</header>
+
+	<main id="main-content">
+		<section id="login">
+			<form action="/login" method="post">
+				<label for="login-username">Логін:</label>
+				<input type="text" id="login-username" name="username" required placeholder="Введіть логін">
+
+				<label for="login-password">Пароль:</label>
+				<input type="password" id="login-password" name="password" required>
+
+				<label>
+					<input type="checkbox" name="remember" checked> Запам’ятати мене
+				</label>
+
+				<input type="submit" value="Увійти">
+				<input type="reset" value="Очистити">
+			</form>
+		</section>
+	</main>
+
+	<footer id="page-footer">
+		<p><a href="index.html">← Повернутись на головну</a></p>
+	</footer>
+</body>
+
+</html>
