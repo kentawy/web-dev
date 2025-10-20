@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Персональна сторінка студента</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header id="page-header">
+		<h1>Богдан Дмитренко</h1>
+		<p>Студент групи ІН-33-4, СумДУ</p>
+		<img src="avatar.png" alt="Фото автора" width="200" height="200">
+
+		<nav>
+			<a href="login.html">Login</a> |
+			<a href="registration.html">Registration</a>
+		</nav>
+	</header>
+
+	<nav id="main-nav">
+		<ul>
+			<li><a href="#about">Про мене</a></li>
+			<li><a href="#hobbies">Хобі</a></li>
+			<li><a href="#contacts">Контакти</a></li>
+		</ul>
+	</nav>
+
+	<div class="main-layout">
+		<main id="main-content">
+			<article id="about">
+				<h2>Про мене</h2>
+				<p>Привіт! Мене звати Богдан. Я навчаюся у Сумському державному університеті
+					на спеціальності «Комп’ютерні науки». Мене цікавлять алгоритми, веброзробка
+					та сучасні технології програмування. У майбутньому хочу стати професійним
+					розробником програмного забезпечення.</p>
+			</article>
+
+			<section id="hobbies">
+				<h2>Мої хобі</h2>
+				<p>У вільний час я люблю читати технічну літературу та художні книги.
+					Також захоплююся подорожами й вивченням нових мов.</p>
+
+				<img src="travel-800.jpg" srcset="travel-400.jpg 400w, travel-800.jpg 800w, travel-1200.jpg 1200w"
+					sizes="(max-width: 600px) 90vw, (max-width: 1024px) 50vw, 800px" alt="Пейзаж із подорожі"
+					loading="lazy" width="400" height="250">
+			</section>
+
+			<div class="card">
+				<img src="travel.jpg" alt="Подорож">
+				<div class="card-content">
+					<h2>Моя улюблена подорож</h2>
+					<p>Це була незабутня подорож до Карпат — гори, тиша і чисте повітря.</p>
+				</div>
+			</div>
+
+			<section id="blog">
+				<h2>Мій блог</h2>
+
+				<div class="toolbar" id="toolbar">
+					<button class="btn" id="btnAll" aria-pressed="true">Усі</button>
+					<span style="margin-left:auto"></span>
+					<input id="searchTitle" class="input" type="search" placeholder="Знайти за назвою…"
+						aria-label="Пошук статті за назвою">
+					<button class="btn" id="searchBtn">Знайти</button>
+				</div>
+
+				<p class="counter" id="counter" aria-live="polite"></p>
+
+				<section id="blog-posts"></section>
+
+			</section>
+		</main>
+
+		<aside id="extra-info">
+			<h2>Цікаві факти</h2>
+			<ul>
+				<li>Улюблена мова програмування: <strong>JavaScript</strong>.</li>
+				<li>Моя улюблена цитата: <q>Навчайся так, ніби ти житимеш вічно.</q></li>
+				<li><a href="https://github.com/kentawy/" target="_blank" rel="noopener">Мій GitHub</a></li>
+			</ul>
+		</aside>
+	</div>
+
+	<footer id="page-footer">
+		<h2 id="contacts">Контакти</h2>
+		<p>Email: <a href="mailto:bohdan.dmytrenko@student.sumdu.edu.ua">bohdan.dmytrenko@student.sumdu.edu.ua</a></p>
+		<p>&copy; 2025 Богдан Дмитренко. Усі права захищені.</p>
+	</footer>
+
+	<script src="blog.js" type="module"></script>
+</body>
+
+</html>
