@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Основи JavaScript",
+    "author": "Olha Shutylieva",
+    "date": "2025-10-10",
+    "category": "JavaScript",
+    "tags": ["JavaScript", "Basics", "ES6"],
+    "content": "Коротко про синтаксис, змінні та типи даних. З чого почати роботу з JS."
+  },
+  {
+    "id": 2,
+    "title": "Гнучкі макети з Flexbox",
+    "author": "Dmytro Kovalenko",
+    "date": "2025-10-08",
+    "category": "CSS",
+    "tags": ["CSS", "Flexbox", "Layout"],
+    "content": "Flexbox допомагає будувати адаптивні макети з мінімумом коду."
+  },
+  {
+    "id": 3,
+    "title": "Семантика HTML5",
+    "author": "Iryna Chorna",
+    "date": "2025-10-05",
+    "category": "HTML",
+    "tags": ["HTML", "Semantic"],
+    "content": "Навіщо використовувати &lt;header&gt;, &lt;main&gt;, &lt;article&gt; та інші семантичні теги."
+  },
+  {
+    "id": 4,
+    "title": "Методи масивів у JavaScript",
+    "author": "Roman Hrytsenko",
+    "date": "2025-10-13",
+    "category": "JavaScript",
+    "tags": ["JavaScript", "Array", "map", "filter", "find"],
+    "content": "Практика з map, filter, reduce, find, sort на реальних прикладах."
+  }
+]
