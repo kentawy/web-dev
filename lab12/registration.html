@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Реєстрація</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header id="page-header">
+		<h1>Реєстрація</h1>
+		<nav>
+			<a href="index.html">Головна</a> |
+			<a href="login.html">Увійти</a>
+		</nav>
+	</header>
+
+	<main id="main-content" class="form-page-container">
+		<section id="registration">
+
+			<form id="registration-form" novalidate>
+
+				<label for="reg-username">Ім’я користувача:</label>
+				<input type="text" id="reg-username" name="reg-username">
+				<span class="error-message" id="error-reg-username"></span>
+
+				<label for="reg-email">Email:</label>
+				<input type="email" id="reg-email" name="reg-email">
+				<span class="error-message" id="error-reg-email"></span>
+
+				<label for="reg-password">Пароль:</label>
+				<input type="password" id="reg-password" name="reg-password">
+				<span class="error-message" id="error-reg-password"></span>
+
+				<label for="reg-bio">Про себе:</label>
+				<textarea id="reg-bio" name="reg-bio" rows="4" cols="40"
+					placeholder="Коротко розкажіть про себе"></textarea>
+
+				<div class="form-group">
+					<span class="form-group-title">Стать:</span>
+					<div class="options-wrapper">
+						<label class="option-label"><input type="radio" name="gender" value="male" checked>
+							Чоловіча</label>
+						<label class="option-label"><input type="radio" name="gender" value="female"> Жіноча</label>
+						<label class="option-label"><input type="radio" name="gender" value="other"> Інше</label>
+					</div>
+				</div>
+
+				<label for="reg-country">Країна:</label>
+				<select id="reg-country" name="reg-country">
+					<option value="ua" selected>Україна</option>
+					<option value="pl">Польща</option>
+					<option value="de">Німеччина</option>
+					<option value="us">США</option>
+				</select>
+
+				<label for="reg-birth">Дата народження:</label>
+				<input type="date" id="reg-birth" name="reg-birth">
+				<span class="error-message" id="error-reg-birth"></span>
+
+				<label class="option-label">
+					<input type="checkbox" name="terms" id="reg-terms"> Погоджуюсь з умовами використання
+				</label>
+				<span class="error-message" id="error-reg-terms"></span>
+
+
+				<input type="submit" value="Зареєструватися">
+				<input type="reset" value="Очистити">
+			</form>
+		</section>
+	</main>
+
+	<footer id="page-footer">
+		<p><a href="index.html">← Повернутись на головну</a></p>
+	</footer>
+
+	<script src="dist/register-logic.js" type="module"></script>
+
+</body>
+
+</html>
