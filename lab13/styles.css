@@ -1,0 +1,26 @@
+body {
+	font-family: sans-serif;
+	padding: 20px;
+}
+
+.container {
+	display: flex;
+	gap: 20px;
+}
+
+nav {
+	background: #eee;
+	padding: 20px;
+	min-width: 200px;
+}
+
+button {
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+
+.hidden {
+	display: none !important;
+}
