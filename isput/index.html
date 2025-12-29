@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Іспитове завдання - Рендеринг компонентів</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Прізвище Ім'я</h1>
+            <p id="subtitle">Група, варіант X</p>
+        </header>
+
+        <div class="controls">
+            <button id="sortBtn">Сортувати</button>
+            <label class="checkbox-label">
+                <input type="checkbox" id="onlyAvailable">
+                Показати лише доступні
+            </label>
+        </div>
+
+        <div class="info">
+            <p id="count">Показано: 0 елементів</p>
+        </div>
+
+        <div id="cards" class="cards-container">
+            <!-- Картки будуть додані через JavaScript -->
+        </div>
+
+        <div id="empty-message" class="empty-message" style="display: none;">
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
